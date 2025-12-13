@@ -1,3 +1,0 @@
-[submodule "components/esp-discord"]
-	path = components/esp-discord
-	url = https://github.com/NYANLAUNCHER/esp-discord
