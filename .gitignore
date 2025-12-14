@@ -1,4 +1,5 @@
 /build
 sdkconfig
 sdkconfig.old
+compile_commands.json
 token.txt
