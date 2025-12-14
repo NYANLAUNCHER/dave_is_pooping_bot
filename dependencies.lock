@@ -1,4 +1,44 @@
 dependencies:
+  esp-idf-lib/esp_idf_lib_helpers:
+    component_hash: a8049b1e609679fb54b2d57b0399dd29c4d1fda09a797edac9926f7810aa5703
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    targets:
+    - esp32
+    - esp32c2
+    - esp32c3
+    - esp32c5
+    - esp32c6
+    - esp32c61
+    - esp32h2
+    - esp32p4
+    - esp32s2
+    - esp32s3
+    version: 1.3.10
+  esp-idf-lib/hx711:
+    component_hash: 1e5c5749ab0b07261a32a4ced0d97c1b44a4627ed97d355f35a7958349c03069
+    dependencies:
+    - name: esp-idf-lib/esp_idf_lib_helpers
+      registry_url: https://components.espressif.com
+      require: private
+      version: '*'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32c2
+    - esp32c3
+    - esp32c5
+    - esp32c6
+    - esp32c61
+    - esp32h2
+    - esp32p4
+    - esp32s2
+    - esp32s3
+    version: 1.0.7
   espressif/esp_websocket_client:
     component_hash: 723aba370113196c66321442426cd6452c351eef31c85c83bd1446831ef9f8f4
     dependencies:
@@ -14,8 +54,9 @@ dependencies:
       type: idf
     version: 5.5.1
 direct_dependencies:
+- esp-idf-lib/hx711
 - espressif/esp_websocket_client
 - idf
-manifest_hash: a2ad8854d34193200c70fcbfbfd7501baa96c8ee988fee20ba026a05cc6aba47
+manifest_hash: 50cb283133c5dcd6a17133a3d101dd531ed72ca9540f44826790beec80c6e5e6
 target: esp32s3
 version: 2.0.0
